@@ -9,17 +9,17 @@ const orm = {
         });
     },
 
-    insertOne: () => {
-        const queryString = "SELECT * FROM ??";
-        connection.query(queryString, [tableName], (err, result) => {
+    insertOne: (burgerName) => {
+        const queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
+        connection.query(queryString, [burgerName], (err, result) => {
             if (err) throw err;
             console.log(result);
         }); 
     },
 
-    updateOne: () => {
-        const queryString = "SELECT * FROM ??";
-        connection.query(queryString, [tableName], (err, result) => {
+    updateOne: (isDevoured, id) => {
+        const queryString = "UPDATE burgers SET devoured = ? WHERE id = ?";
+        connection.query(queryString, [isDevoured, id], (err, result) => {
             if (err) throw err;
             console.log(result);
         }); 

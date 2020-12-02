@@ -1,5 +1,5 @@
-INSERT INTO burgers (burger_name, devoured) 
+INSERT INTO burgers (burger_name) 
 VALUES
-    ("Cheese burger",FALSE),
-    ("Chili burger",FALSE),
-    ("Teriyaki burger",FALSE);
+    ("Cheese burger"),
+    ("Chili burger"),
+    ("Teriyaki burger");
