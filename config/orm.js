@@ -17,7 +17,7 @@ const orm = {
         }); 
     },
 
-    updateOne: (isDevoured, id) => {
+    updateBoolean: (isDevoured, id) => {
         const queryString = "UPDATE burgers SET devoured = ? WHERE id = ?";
         connection.query(queryString, [isDevoured, id], (err, result) => {
             if (err) throw err;
