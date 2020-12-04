@@ -5,7 +5,7 @@ const burger = {
         orm.selectAll("burgers");
     },
     insertOne: (burgerName) => {
-        orm.insertOne("Ham burger");
+        orm.insertOne(burgerName);
     }, 
     updateBoolean: (isDevoured, id) => {
         orm.updateOne(isDevoured, id);
