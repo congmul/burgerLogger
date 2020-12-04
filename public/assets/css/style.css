@@ -1,0 +1,36 @@
+body{
+    background: #fbd279;
+}
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+.burgers{
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.form-group{
+    margin-top: 50px;
+    align-items: center;
+}
+
+#newBurger{
+    /* margin-left: 0px; */
+    /* width: 250px; */
+    height: 70px;
+    font-size: 40px;
+}
+
+#disabledBtn{
+    width:250px;
+    text-align: left;
+    border-color: black;
+}
