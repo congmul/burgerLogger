@@ -3,6 +3,7 @@ body{
 }
 .container {
     text-align: center;
+    /* align-items: center; */
 }
 
 h1 {
@@ -18,13 +19,12 @@ ul {
 }
 
 .form-group{
-    margin-top: 50px;
-    align-items: center;
+    /* margin-top: 50px; */
+    width:400px;
+    margin: 50px auto;
 }
 
 #newBurger{
-    /* margin-left: 0px; */
-    /* width: 250px; */
     height: 70px;
     font-size: 40px;
 }
