@@ -1,3 +1,5 @@
+<img src = "./assets/img/burgerImg.png" width="200">
+<h1>Eat-Da-Burger!</h1>
 <ul>
     {{#each burgers}}
     <li>
@@ -5,3 +7,11 @@
     </li>
     {{/each}}
 </ul>
+
+<form>
+    <div class="form-group">
+        <textarea type="text" class="form-control" id="newBurger" rows="1"></textarea>
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        <small class="form-text text-muted">Enter a burger you want to eat Click the "Submit" button</small>
+    </div>
+</form>
