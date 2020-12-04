@@ -4,21 +4,24 @@ const router = express.Router();
 const burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
-rounter.get("/", (req, res) => {
-    
-    res.render("index", {burgers: burger.selectAll()});
-
+router.get("/", (req, res) => {
+    burger.selectAll((data) => {
+        res.render("index", {burgers: data});
+    });
 });
 
-// const router = {
-//     get: (route) =>{
-//         console.log("\n===========Inside get function In burgers_controller.js===========\n");
-//         // console.log(burger.selectAll());
 
-//         app.get(route, (req, res) => {
-//             res.render("index", {burgers: burger.selectAll()});
-//         });
-//     }
-// }
+router.post("/api/create", (req, res) => {
+    // put variable burgerNameFromHTML
+    burger.insertOne("burgerNameFromHTML",(data) => {
+        res.render("index", {burgers: data});
+    });
+});
+    // put variable isDevoured, id
+router.put("/api/update", (req, res) => {
+    burger.updateBoolean("isDevoured","id",(data) => {
+        res.render("index", {burgers: data});
+    });
+});
 
 module.exports = router;
