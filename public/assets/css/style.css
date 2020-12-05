@@ -1,9 +1,8 @@
-body{
-    background: #fbd279;
-}
+
 .container {
     text-align: center;
-    /* align-items: center; */
+    background: #fbd279;
+    padding: 5%;
 }
 
 h1 {
