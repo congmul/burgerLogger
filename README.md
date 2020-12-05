@@ -11,6 +11,8 @@
 ## Description
 This project with MySQL, Node, Express, Handlers and a homemade ORM. It is a restaurant app that lets users input the names of burgers they'd like to eat.
 
+LINK : https://quiet-ridge-69107.herokuapp.com/ 
+
 ## Usage
 npm i to set environment<br>
 <img src = "./public/assets/img/operating_img.gif" width="800">
