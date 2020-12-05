@@ -13,13 +13,21 @@ h1 {
 .burgers{
     margin-top: 50px;
 }
-
-ul {
+li{
     list-style-type: none;
 }
 
+li p{
+    padding-left: 25%;
+    padding-bottom: 15px;
+    text-align: left;
+}
+.updateDevoured {
+    float: right;
+    margin-right: 30%;
+}
+
 .form-group{
-    /* margin-top: 50px; */
     width:400px;
     margin: 50px auto;
 }
