@@ -7,8 +7,8 @@
             {{#each burgers}}
             {{#unless this.devoured}}
                 <li>
-                    <p>{{this.id}}. {{this.burger_name}} <button class="btn btn-success ml-5 mb-1"
-                            data-id={{this.id}}>Devour it!</button></p>
+                    <p>{{this.id}}. {{this.burger_name}} <button class="btn btn-success ml-5 mb-1 updateDevoured"
+                            data-id="{{this.id}}">Devour it!</button></p>
                 </li>
             {{/unless}}
             {{/each}}
@@ -27,10 +27,10 @@
             </ul>
         </div>
     </div>
-    <form>
+    <form class ="create-form">
         <div class="form-group">
             <textarea type="text" class="form-control" id="newBurger" rows="1"></textarea>
-            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            <button id="submitBtn" type="submit" class="btn btn-primary mt-2">Submit</button>
             <small class="form-text text-muted mt-3">Enter a burger you want to eat Click the "Submit" button</small>
         </div>
     </form>

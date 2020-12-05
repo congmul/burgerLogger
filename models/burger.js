@@ -12,7 +12,7 @@ const burger = {
         });
     }, 
     updateBoolean: (isDevoured, id, cb) => {
-        orm.updateOne(isDevoured, id, (data) =>{
+        orm.updateBoolean(isDevoured, id, (data) =>{
             cb(data);
         });
     }

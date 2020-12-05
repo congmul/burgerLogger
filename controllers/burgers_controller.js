@@ -13,15 +13,16 @@ router.get("/", (req, res) => {
 
 
 router.post("/api/create", (req, res) => {
-    // put variable burgerNameFromHTML
-    burger.insertOne("burgerNameFromHTML",(data) => {
-        res.render("index", {burgers: data});
+    console.log("POST TEST");
+    burger.insertOne(req.body.burger_name,(result) => {
+        res.json( {id : result.insertId });
     });
 });
+
     // put variable isDevoured, id
 router.put("/api/update", (req, res) => {
-    burger.updateBoolean("isDevoured","id",(data) => {
-        res.render("index", {burgers: data});
+    burger.updateBoolean("1",req.body.id,(result) => {
+        res.json( {id : result.insertId });
     });
 });
 
